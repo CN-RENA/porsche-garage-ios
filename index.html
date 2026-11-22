@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f6f6f4">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="保时捷">
+  <title>保时捷 · 我的车库</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/app-icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <section class="page page-discover is-active" id="page-discover" data-page="discover">
+      <header class="discover-head">
+        <div class="brand-lockup">
+          <img class="brand-icon" src="assets/app-icon.png" alt="">
+          <span>保时捷</span>
+          <span class="brand-separator"></span>
+          <span class="brand-model">Panamera</span>
+        </div>
+        <div class="discover-tabs" role="tablist" aria-label="发现内容">
+          <button class="discover-tab is-active" type="button" role="tab" aria-selected="true" data-discovery="recommend">推荐</button>
+          <button class="discover-tab" type="button" role="tab" aria-selected="false" data-discovery="community">社区</button>
+          <button class="discover-tab" type="button" role="tab" aria-selected="false" data-discovery="activity">活动</button>
+        </div>
+      </header>
+
+      <div class="discover-stage">
+        <img class="discover-photo" src="assets/hero-photo.jpg" alt="Porsche Panamera">
+        <div class="discover-shade"></div>
+        <div class="discover-copy">
+          <span class="discover-kicker" id="discovery-kicker">保时捷车主专属</span>
+          <h1 id="discovery-title">心动找车</h1>
+          <p id="discovery-subtitle">梦想座驾 一触即达</p>
+          <button class="button button-light button-wide" type="button" id="discovery-action">即刻探索</button>
+          <div class="carousel-dots" aria-label="内容进度">
+            <span class="is-active"></span><span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="discover-body">
+        <div class="quick-grid">
+          <button class="quick-item quick-trial" type="button" data-action="test-drive" aria-label="预约试驾">
+            <span>预约试驾</span>
+          </button>
+          <button class="quick-item quick-custom" type="button" data-action="configure" aria-label="定制爱车">
+            <span>定制爱车</span>
+          </button>
+          <button class="quick-item quick-models" type="button" data-action="models" aria-label="全部车型">
+            <span>全部车型</span>
+          </button>
+          <button class="quick-item quick-shop" type="button" data-action="shop" aria-label="精选商城">
+            <span>精选商城</span>
+          </button>
+        </div>
+
+        <section class="topic-section">
+          <div class="section-heading">
+            <h2>热门话题</h2>
+            <button class="icon-button" type="button" aria-label="查看全部话题" data-action="topics">
+              <i data-lucide="chevron-right"></i>
+            </button>
+          </div>
+          <div class="topic-row">
+            <button class="topic-tag" type="button" data-action="topic">
+              <span>#保时捷声动时刻</span>
+              <b>热门</b>
+            </button>
+            <button class="topic-add" type="button" aria-label="发布话题" data-action="compose">
+              <i data-lucide="plus"></i>
+            </button>
+          </div>
+        </section>
+
+        <section class="story-grid">
+          <button class="story-card story-main" type="button" data-action="story">
+            <img src="assets/source-vehicle.jpg" alt="">
+            <span>一台车，如何成为你的第二客厅</span>
+          </button>
+          <button class="story-card story-small" type="button" data-action="story">
+            <img src="assets/car-side.jpg" alt="">
+            <span>Panamera 的夜色巡游</span>
+          </button>
+        </section>
+      </div>
+    </section>
+
+    <section class="page page-featured" id="page-featured" data-page="featured">
+      <header class="simple-head dark-head">
+        <div>
+          <span class="eyebrow">PORSCHE SELECTION</span>
+          <h1>精选</h1>
+        </div>
+        <button class="icon-button icon-button-dark" type="button" aria-label="搜索" data-action="search">
+          <i data-lucide="search"></i>
+        </button>
+      </header>
+
+      <div class="featured-hero">
+        <img src="assets/car-panamera.jpg" alt="Panamera">
+        <div class="featured-hero-copy">
+          <span>行政级跑车</span>
+          <h2>Panamera</h2>
+          <p>把驾驶的锋芒，藏进每一次从容抵达。</p>
+        </div>
+      </div>
+
+      <div class="chip-row" role="tablist" aria-label="车型筛选">
+        <button class="chip is-active" type="button" data-filter="all">全部</button>
+        <button class="chip" type="button" data-filter="sport">跑车</button>
+        <button class="chip" type="button" data-filter="suv">SUV</button>
+        <button class="chip" type="button" data-filter="electric">纯电</button>
+      </div>
+
+      <div class="model-list">
+        <button class="model-row" type="button" data-model="Panamera">
+          <span class="model-number">01</span>
+          <span class="model-meta"><b>Panamera</b><small>豪华轿车 · 燃油</small></span>
+          <span class="model-price">¥ 1,198,000 起</span>
+          <i data-lucide="arrow-up-right"></i>
+        </button>
+        <button class="model-row" type="button" data-model="Cayenne">
+          <span class="model-number">02</span>
+          <span class="model-meta"><b>Cayenne</b><small>SUV · 燃油</small></span>
+          <span class="model-price">¥ 948,000 起</span>
+          <i data-lucide="arrow-up-right"></i>
+        </button>
+        <button class="model-row" type="button" data-model="911">
+          <span class="model-number">03</span>
+          <span class="model-meta"><b>911</b><small>跑车 · 燃油</small></span>
+          <span class="model-price">¥ 1,318,000 起</span>
+          <i data-lucide="arrow-up-right"></i>
+        </button>
+        <button class="model-row" type="button" data-model="Taycan">
+          <span class="model-number">04</span>
+          <span class="model-meta"><b>Taycan</b><small>跑车 · 纯电</small></span>
+          <span class="model-price">¥ 898,000 起</span>
+          <i data-lucide="arrow-up-right"></i>
+        </button>
+      </div>
+
+      <button class="configure-band" type="button" data-action="configure">
+        <span><small>在线个性化配置</small><b>定制梦想座驾</b></span>
+        <i data-lucide="sliders-horizontal"></i>
+      </button>
+    </section>
+
+    <section class="page page-vehicle" id="page-vehicle" data-page="vehicle">
+      <header class="vehicle-head">
+        <div>
+          <p class="data-time"><span id="current-time">23:33</span> 的车辆数据</p>
+          <button class="vehicle-switch" type="button" data-action="switch-vehicle">
+            <span id="active-car-name">911 Carrera</span>
+            <i data-lucide="chevron-down"></i>
+          </button>
+        </div>
+        <div class="vehicle-head-actions">
+          <button class="icon-button" type="button" aria-label="扫描车辆" data-action="scan">
+            <i data-lucide="scan-line"></i>
+          </button>
+          <button class="icon-button" type="button" aria-label="我的车库" data-action="garage">
+            <i data-lucide="warehouse"></i>
+          </button>
+        </div>
+      </header>
+
+      <div class="vehicle-toolbar">
+        <button class="soft-button" type="button" data-action="vehicle-info">车辆详细信息</button>
+        <button class="status-pill" type="button" data-action="vehicle-status">
+          <i data-lucide="badge-check"></i>
+        </button>
+      </div>
+
+      <div class="vehicle-visual">
+        <img id="active-car-image" src="assets/car-911.png" alt="911 Carrera">
+        <div class="vehicle-dots"><span class="is-active"></span><span></span></div>
+      </div>
+
+      <button class="lock-card" type="button" id="lock-card" data-action="lock">
+        <i data-lucide="lock-keyhole"></i>
+        <span id="lock-label">锁止/解锁</span>
+      </button>
+
+      <div class="range-card">
+        <div class="range-fill"></div>
+        <div class="range-copy">
+          <strong id="range-value">444<small> km</small></strong>
+          <span>剩余续航</span>
+        </div>
+      </div>
+
+      <section class="location-card">
+        <img class="location-map" src="assets/map-light.png" alt="">
+        <div class="location-copy">
+          <h2>车辆位置</h2>
+          <p id="location-status">无远程访问权限授权</p>
+        </div>
+        <div class="location-actions">
+          <button class="floating-action" type="button" aria-label="车辆功能" data-action="functions"><i data-lucide="ellipsis"></i></button>
+          <button class="floating-action" type="button" aria-label="搜索位置" data-action="locate"><i data-lucide="search"></i></button>
+        </div>
+      </section>
+
+      <section class="quick-functions">
+        <button type="button" data-action="climate"><i data-lucide="fan"></i><span>空调</span></button>
+        <button type="button" data-action="flash"><i data-lucide="lightbulb"></i><span>闪灯</span></button>
+        <button type="button" data-action="honk"><i data-lucide="volume-2"></i><span>鸣笛</span></button>
+        <button type="button" data-action="history"><i data-lucide="history"></i><span>行程</span></button>
+      </section>
+    </section>
+
+    <section class="page page-services" id="page-services" data-page="services">
+      <header class="simple-head light-head">
+        <div>
+          <span class="eyebrow">PORSCHE SERVICE</span>
+          <h1>服务</h1>
+        </div>
+        <button class="icon-button outlined-button" type="button" aria-label="联系顾问" data-action="advisor">
+          <i data-lucide="headset"></i>
+        </button>
+      </header>
+
+      <div class="service-banner">
+        <div class="service-banner-copy">
+          <span>专属服务</span>
+          <h2>随时待命，<br>只为下一程。</h2>
+          <button class="button button-dark" type="button" data-action="advisor">联系服务顾问</button>
+        </div>
+        <img src="assets/app-icon.png" alt="">
+      </div>
+
+      <section class="service-section">
+        <div class="section-heading"><h2>车辆服务</h2><span>3 项待办</span></div>
+        <div class="service-grid">
+          <button type="button" data-action="maintenance"><i data-lucide="wrench"></i><b>保养预约</b><small>下一次 12 月 08 日</small></button>
+          <button type="button" data-action="insurance"><i data-lucide="shield-check"></i><b>保险服务</b><small>保障中</small></button>
+          <button type="button" data-action="roadside"><i data-lucide="life-buoy"></i><b>道路救援</b><small>24 小时在线</small></button>
+          <button type="button" data-action="charging"><i data-lucide="plug-zap"></i><b>充电服务</b><small>查找附近充电站</small></button>
+        </div>
+      </section>
+
+      <section class="service-section">
+        <div class="section-heading"><h2>车主权益</h2><button class="text-link" type="button" data-action="benefits">查看全部</button></div>
+        <button class="benefit-row" type="button" data-action="benefit">
+          <span class="benefit-mark"><i data-lucide="gem"></i></span>
+          <span><b>Panamera 车主专享礼遇</b><small>本月新增 2 项权益</small></span>
+          <i data-lucide="chevron-right"></i>
+        </button>
+      </section>
+
+      <section class="service-section last-section">
+        <div class="section-heading"><h2>常见问题</h2></div>
+        <details>
+          <summary>如何预约车辆保养？</summary>
+          <p>进入“车辆服务”选择保养预约，挑选门店与时间即可。当前版本为本地演示，不会提交真实预约。</p>
+        </details>
+        <details>
+          <summary>车辆数据多久更新一次？</summary>
+          <p>演示界面使用本地示例数据。接入车辆 API 后，可按车型和账户实时刷新。</p>
+        </details>
+        <details>
+          <summary>如何联系专属服务顾问？</summary>
+          <p>点击页面右上角的耳机图标，即可打开顾问联系面板。</p>
+        </details>
+      </section>
+    </section>
+
+    <section class="page page-profile" id="page-profile" data-page="profile">
+      <header class="profile-head">
+        <span class="profile-title">我的</span>
+        <div>
+          <button class="icon-button" type="button" aria-label="在线客服" data-action="advisor"><i data-lucide="headset"></i></button>
+          <button class="icon-button" type="button" aria-label="设置" data-action="settings"><i data-lucide="settings"></i></button>
+        </div>
+      </header>
+
+      <section class="owner-card">
+        <div class="avatar-wrap">
+          <img class="owner-avatar" src="assets/owner.jpg" alt="">
+          <button class="notification-badge" type="button" aria-label="消息" data-action="messages"><i data-lucide="bell"></i><b>2</b></button>
+        </div>
+        <div class="owner-main">
+          <button class="owner-name" type="button" data-action="edit-name">
+            <span id="owner-name">Roy</span>
+            <i data-lucide="chevron-right"></i>
+          </button>
+          <button class="club-pill" type="button" data-action="club">车主俱乐部 <i data-lucide="chevron-right"></i></button>
+        </div>
+      </section>
+
+      <div class="owner-stats">
+        <button type="button" data-action="posts"><b>0</b><span>发布</span></button>
+        <button type="button" data-action="favorites"><b>0</b><span>收藏</span></button>
+        <button type="button" data-action="follows"><b>0</b><span>关注</span></button>
+        <button type="button" data-action="fans"><b>0</b><span>粉丝</span></button>
+      </div>
+
+      <div class="profile-garage">
+        <button class="garage-card" type="button" data-action="garage" data-profile-car="911">
+          <img src="assets/car-911-side.png" alt="911 Carrera">
+          <span><b>911 Carrera</b><small>VIN: WP0A********5648</small></span>
+        </button>
+        <button class="garage-card" type="button" data-action="garage" data-profile-car="cayenne">
+          <img src="assets/car-cayenne-side.png" alt="Cayenne 铂金版">
+          <span><b>Cayenne 铂金版</b><small>VIN: WP1A********9322</small></span>
+        </button>
+      </div>
+
+      <div class="profile-grid">
+        <button type="button" data-action="orders"><i data-lucide="receipt-text"></i><span>我的订单</span></button>
+        <button type="button" data-action="appointments"><i data-lucide="calendar-check"></i><span>我的预约</span></button>
+        <button type="button" data-action="benefits"><i data-lucide="gem"></i><span>我的权益</span></button>
+        <button type="button" data-action="coupons"><i data-lucide="wallet-cards"></i><span>我的卡券</span></button>
+        <button type="button" data-action="events"><i data-lucide="calendar-days"></i><span>我的活动</span></button>
+        <button type="button" data-action="configure"><i data-lucide="sparkles"></i><span>定制保时捷</span></button>
+        <button type="button" data-action="gifts"><i data-lucide="gift"></i><span>我的礼物</span></button>
+        <button type="button" data-action="badges"><i data-lucide="shield"></i><span>我的勋章</span></button>
+        <button type="button" data-action="garage"><i data-lucide="warehouse"></i><span>我的车库</span></button>
+        <button type="button" data-action="footprints"><i data-lucide="clock-3"></i><span>我的足迹</span></button>
+        <button type="button" data-action="journey"><i data-lucide="hand-heart"></i><span>共行·致远</span></button>
+      </div>
+
+      <button class="profile-banner" type="button" data-action="badges">
+        <span>领「挚友同行」勋章赢专属惊喜<br><small>即刻开奖</small></span>
+        <img src="assets/car-911-side.png" alt="">
+      </button>
+    </section>
+
+    <nav class="bottom-nav" aria-label="主导航">
+      <button class="nav-item is-active" type="button" data-nav="discover">
+        <i data-lucide="compass"></i><span>发现</span>
+      </button>
+      <button class="nav-item" type="button" data-nav="featured">
+        <i data-lucide="briefcase-business"></i><span>精选</span>
+      </button>
+      <button class="nav-item" type="button" data-nav="vehicle">
+        <i data-lucide="car-front"></i><span>车辆</span>
+      </button>
+      <button class="nav-item" type="button" data-nav="services">
+        <i data-lucide="badge-check"></i><span>服务</span>
+      </button>
+      <button class="nav-item" type="button" data-nav="profile">
+        <i data-lucide="user-round"></i><span>我的</span>
+      </button>
+    </nav>
+  </div>
+
+  <div class="sheet-layer" id="sheet-layer" hidden>
+    <button class="sheet-backdrop" type="button" aria-label="关闭" data-close-sheet></button>
+    <section class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title">
+      <div class="sheet-handle"></div>
+      <header class="sheet-head">
+        <div><span class="eyebrow" id="sheet-kicker">保时捷</span><h2 id="sheet-title">服务</h2></div>
+        <button class="icon-button" type="button" aria-label="关闭" data-close-sheet><i data-lucide="x"></i></button>
+      </header>
+      <div class="sheet-content" id="sheet-content"></div>
+    </section>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="vendor/lucide.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
